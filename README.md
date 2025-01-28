@@ -1,24 +1,18 @@
-# README
+# String Calculator TDD Kata
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This project is the **Incubyte TDD Assessment** that implements a string calculator using Test-Driven Development (TDD) principles.
 
-Things you may want to cover:
+## Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ManojParmar93/incubyte_assignment
+2. Navigate to the project directory:
+    ```bash
+    cd incubyte_assignment
+3. Install the required dependencies:
+    ```bash
+    bundle install
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+To run the tests for a specific file, use the following command: `bundle exec rspec path/to/your/spec_file.rb`
