@@ -29,7 +29,7 @@ RSpec.describe StringCalculator do
 
     it 'add method to handle any amount of numbers' do
       numbers = (1..999999).to_a.join(',')
-      expect(StringCalculator.add(numbers)).to eq(499999500000)
+      expect(StringCalculator.add(numbers)).to eq(500500)
     end
 
     it 'raises an exception for negative numbers' do
@@ -38,6 +38,10 @@ RSpec.describe StringCalculator do
 
     it 'includes all negative numbers in the exception message' do
       expect { StringCalculator.add("1,-2,-3,4") }.to raise_error("negative numbers not allowed: -3, -2")
+    end
+
+    it 'Numbers bigger than 1000 should be ignored' do
+      expect(StringCalculator.add("1,1002")).to eq(1)
     end
   end
 end

@@ -11,6 +11,10 @@ class StringCalculator
 
       raise NegativeNumberFound.new("negative numbers not allowed: #{ negative_numbers.join(', ') }")
     end
+
+    # remove numbers greater than 1000
+    numbers = numbers.take_while{ |number| number <= 1000 }
+
     numbers.sum
   end
 end
