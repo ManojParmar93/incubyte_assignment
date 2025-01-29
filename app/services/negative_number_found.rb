@@ -1,0 +1,1 @@
+class NegativeNumberFound < StandardError; end
