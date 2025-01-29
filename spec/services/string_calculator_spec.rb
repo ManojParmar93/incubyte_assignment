@@ -43,5 +43,9 @@ RSpec.describe StringCalculator do
     it 'Numbers bigger than 1000 should be ignored' do
       expect(StringCalculator.add("1,1002")).to eq(1)
     end
+
+    it 'Delimiters can be of any length' do
+      expect(StringCalculator.add("//[***]\n1***2***3")).to eq(6)
+    end
   end
 end

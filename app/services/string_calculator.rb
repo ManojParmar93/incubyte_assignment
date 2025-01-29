@@ -1,5 +1,5 @@
 class StringCalculator
-  DELIMITERS = [' ', "//", "\n", ";", "|"]
+  DELIMITERS = [' ', "//", "\n", ";", "|", '%', '*']
 
   def self.add(number_string)
     # replaced all delimiters with comma
