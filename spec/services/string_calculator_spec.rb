@@ -26,5 +26,10 @@ RSpec.describe StringCalculator do
       expect(StringCalculator.add("//;\n1;2")).to eq(3)
       expect(StringCalculator.add("//|\n1|2|3")).to eq(6)
     end
+
+    it 'add method to handle any amount of numbers' do
+      numbers = (1..999999).to_a.join(',')
+      expect(StringCalculator.add(numbers)).to eq(499999500000)
+    end
   end
 end
