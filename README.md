@@ -1,4 +1,5 @@
 # String Calculator TDD Kata
+https://blog.incubyte.co/blog/tdd-assessment/
 
 ## Description
 This project is the **Incubyte TDD Assessment** that implements a string calculator using Test-Driven Development (TDD) principles.
