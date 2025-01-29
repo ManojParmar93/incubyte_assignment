@@ -15,4 +15,4 @@ This project is the **Incubyte TDD Assessment** that implements a string calcula
     bundle install
 
 ## Usage
-To run the tests for a specific file, use the following command: `bundle exec rspec path/to/your/spec_file.rb`
+To run the tests for a specific file, use the following command: `bundle exec rspec spec/services/string_calculator_spec.rb`
